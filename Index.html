@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script> 
+    function validar(){
+    var email = document.getElementById ("email").value;
+    var pwd = document.getElementById("mypassword").value;
+    if (email=="x@gmail.com" && pwd=="patata"){
+        window.location.href="cv.html"
+        alert("Te dejo entrar, anda");
+    }
+    else{ 
+        alert("No me tomes por tonto");
+    }
+    }    
+    </script>
+</head>
+<body>
+    
+    <form action="" method="">
+    <p>Introduce tu email <input type="email" name="Introduce el email" id="email"></p>
+    <p>Introduce tu contraseña <input type="password" name ="Introduce tu password" id="mypassword"></p>
+    <input type="button" value="validar" onclick="validar()">
+    </form>
+</body>
+</html>
