@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Document</title>
-    <script> 
-    function validar(){
-    var email = document.getElementById ("email").value;
-    var pwd = document.getElementById("mypassword").value;
-    if (email=="x@gmail.com" && pwd=="patata"){
-        window.location.href="cv.html"
-        alert("Te dejo entrar, anda");
-    }
-    else{ 
-        alert("No me tomes por tonto");
-    }
-    }    
+    <script>
+        function validar() {
+            var email = document.getElementById("email").value;
+            var pwd = document.getElementById("mypassword").value;
+            if (email == "x@gmail.com" && pwd == "patata") {
+                window.location.href = "cv.html"
+                alert("Te dejo entrar, anda");
+            }
+            else {
+                alert("No me tomes por tonto");
+            }
+        }    
     </script>
 </head>
+
 <body>
-    
-    <form action="" method="">
-    <p>Introduce tu email <input type="email" name="Introduce el email" id="email"></p>
-    <p>Introduce tu contraseña <input type="password" name ="Introduce tu password" id="mypassword"></p>
-    <input type="button" value="validar" onclick="validar()">
-    </form>
+    <div id="cuadroPrincipal">
+        <form action="" method="">
+            <p>Login Form</p>
+            <p>Login to access your dashboard</p>
+            <input class="ancho100 fondoGris" type="email" name="Introduce el email" id="email"><br>
+            <input class="ancho100 fondoGris" type="password" name="Introduce tu password" id="mypassword"></p>
+            <input class="botonazul ancho100" type="button" value="validar" onclick="validar()">
+        </form>
+        <p class="textochico"> Login Form </p>
+        <p class="textochico"> Login to access your dashboard </p>
+        <p>Don't have an account? Sing Up </p>
+    </div>
+    <p class="cre"> Creditos: Mónica </p>
 </body>
+
 </html>
